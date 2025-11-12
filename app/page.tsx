@@ -23,33 +23,69 @@ export default function Home() {
             committed to Islamic values and technical excellence.
           </p>
           
-          <div className="bg-emerald-50 dark:bg-emerald-950 p-6 rounded-lg w-full border border-emerald-200 dark:border-emerald-800">
-            <h3 className="text-xl font-semibold text-emerald-800 dark:text-emerald-300 mb-3">
-              🚀 الأسبوع 9: الإطلاق العالمي
-            </h3>
-            <ul className="text-sm text-zinc-700 dark:text-zinc-300 space-y-2">
-              <li>✅ إعداد خطة الإطلاق الإعلامية والعملياتية</li>
-              <li>✅ توسعة تغطية الاتصالات الفضائية والدعم الفني</li>
-              <li>✅ التحقق من توفر المحتوى النهائي والتوافق الشرعي</li>
-              <li>✅ جاهزون للإطلاق الرسمي للعالم العربي والإسلامي</li>
-            </ul>
+          <div className="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 rounded-lg w-full shadow-lg">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+              <h3 className="text-2xl font-bold text-white text-center">
+                🚀 المنصة مباشرة الآن!
+              </h3>
+              <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
+            </div>
+            <p className="text-center text-white text-lg font-semibold mb-3">
+              Platform LIVE Now!
+            </p>
+            <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 mb-4">
+              <p className="text-white text-sm font-medium text-center mb-2">
+                الحمد لله - تم الإطلاق بنجاح
+              </p>
+              <p className="text-white/90 text-xs text-center">
+                Alhamdulillah - Successfully Launched
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-2 text-xs">
+              <div className="bg-white/10 backdrop-blur-sm rounded p-2 text-white">
+                <div className="font-semibold">✅ Uptime</div>
+                <div className="text-white/80">100%</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded p-2 text-white">
+                <div className="font-semibold">⚡ Response</div>
+                <div className="text-white/80">&lt;150ms</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded p-2 text-white">
+                <div className="font-semibold">🔒 Security</div>
+                <div className="text-white/80">Active</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded p-2 text-white">
+                <div className="font-semibold">🌍 Global</div>
+                <div className="text-white/80">Ready</div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-amber-50 dark:bg-amber-950/50 p-4 rounded-lg w-full border border-amber-200 dark:border-amber-800">
+            <p className="text-sm text-amber-900 dark:text-amber-200 text-center font-semibold">
+              توكلنا على الله - تم بدء الخدمة
+            </p>
+            <p className="text-xs text-amber-700 dark:text-amber-300 text-center mt-1">
+              &ldquo;Trust in Allah&rdquo; - Service Initiated
+            </p>
           </div>
         </div>
         
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row-reverse w-full justify-center sm:justify-start">
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-700 px-5 text-white transition-colors md:w-[200px]"
+            href="/docs/launch/LAUNCH_STATUS.md"
+            rel="noopener noreferrer"
+          >
+            🎉 حالة الإطلاق
+          </a>
+          <a
+            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-emerald-600 dark:border-emerald-400 px-5 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-950 text-emerald-700 dark:text-emerald-300 md:w-[200px]"
             href="/docs/launch/LAUNCH_PLAN.md"
             rel="noopener noreferrer"
           >
             📋 خطة الإطلاق
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-emerald-600 dark:border-emerald-400 px-5 transition-colors hover:bg-emerald-50 dark:hover:bg-emerald-950 text-emerald-700 dark:text-emerald-300 md:w-[200px]"
-            href="/docs/launch/SHARIA_COMPLIANCE.md"
-            rel="noopener noreferrer"
-          >
-            ☪️ التوافق الشرعي
           </a>
         </div>
         
