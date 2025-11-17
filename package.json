@@ -1,7 +1,27 @@
 {
-  "name": "nextjs",
+  "name": "nextjs-boilerplate",
   "version": "0.1.0",
+  "description": "A modern Next.js boilerplate with TypeScript, Tailwind CSS, and ESLint configured for rapid development",
+  "author": "ZOOKA-AI",
+  "license": "MIT",
   "private": true,
+  "keywords": [
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "boilerplate",
+    "starter",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZOOKA-AI/nextjs-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZOOKA-AI/nextjs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ZOOKA-AI/nextjs-boilerplate#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -22,5 +42,9 @@
     "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
