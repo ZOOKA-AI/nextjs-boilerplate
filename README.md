@@ -16,7 +16,7 @@ A modern, production-ready Next.js boilerplate with TypeScript, Tailwind CSS v4,
 
 ### Prerequisites
 
-- Node.js 18.x or later
+- Node.js 20.9.0 or later
 - npm, yarn, or pnpm package manager
 
 ### Installation
