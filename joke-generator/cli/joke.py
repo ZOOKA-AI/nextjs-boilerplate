@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import requests
+import sys
+
+def get_joke(allow_offensive=False):
+    blacklist = '' if allow_offensive else '&blacklistFlags=nsfw,religious,political,racist,sexist'
+    url = f'https://v2.jokeapi.dev/joke/Any?type=single,twopart{blacklist}'
+    r = requests.get(url, timeout=5)
+    r.raise_for_status()
+    return r.json()
+
+def print_joke(data):
+    if data.get('type') == 'single':
+        print(data.get('joke'))
+    elif data.get('type') == 'twopart':
+        print(data.get('setup'))
+        input('\n(Press Enter for the punchline...)')
+        print(data.get('delivery'))
+    else:
+        print('No joke received.')
+
+if __name__ == '__main__':
+    allow = '--allow-offensive' in sys.argv
+    joke = get_joke(allow_offensive=allow)
+    print_joke(joke)

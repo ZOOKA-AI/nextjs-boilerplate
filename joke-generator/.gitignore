@@ -1,0 +1,6 @@
+# .gitignore for joke-generator
+
+__pycache__/
+*.pyc
+node_modules/
+.env
